@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background: url(water.jpg);
+      margin: 0 auto;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header img:hover {
+      background: rgb(8, 79, 123);
+      border: 2px solid white;
+    }
+
+    .header img {
+      background: #d9ddde;
+      opacity: .9;
+      width: 80px;
+      height: auto;
+      border-radius: 50% /50px;
+      margin-top: 3px;
+      border: 5px solid #073045;
+    }
+
+    .container {
+      background: transparent;
+      margin: 10px;
+      height: auto;
+      width: 90%;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 30px;
+      color: #000106;
+      text-align: center;
+      margin-top: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    label {
+      text-align: left;
+      font-size: 15px;
+      color: 3c0105;
+    }
+
+    .container input {
+      width: 80%;
+      height: 50px;
+      margin-bottom: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom-color: white;
+      padding: 5px;
+      outline: none;
+      font-size: 18px;
+      background: transparent;
+      text-transform: capitalize;
+      /* box-shadow: 5px 10px 20px 5px rgb(28, 172, 201); */
+    }
+
+    .container input:second-child {
+      border: none;
+    }
+
+    .container input::placeholder {
+      font-size: 15px;
+      color: whitesmoke;
+
+    }
+
+    .container button {
+      font-size: 20px;
+      width: 90%;
+      border-radius: 12px;
+      font-family: helvetica;
+      color: #fff;
+      border: none;
+      background: url(water.jpg);
+      text-transform: capitalize;
+      margin-top: 20px;
+    }
+
+    .container button:hover {
+      opacity: .8;
+    }
+
+    a {
+      font-size: calibri;
+      color: whitesmoke;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    p {
+      font-size: 16px;
+      color: lightblue;
+      margin-top: 20px;
+    }
+
+    #forgot {
+      margin-bottom: 20px;
+    }
+
+    .eye {
+      border: none;
+      outline: none;
+      position: absolute;
+      top: -50px;
+    }
+
+    .password {
+      width: 90%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+
+    footer {
+      background:#3c5963;
+      width: 100%;
+    }
+
+    footer ul {
+      list-style-type: none;
+
+    }
+
+    footer ul li ul {
+      margin-left: 10px;
+    }
+
+    footer ul li ul li {
+      display: inline-block;
+      margin-left: 20px;
+
+    }
+
+    footer ul li ul li a {
+      text-decoration: none;
+      color: grey;
+      font-size: 15px;
+      font-family: helvetica;
+      text-transform: capitalize;
+    }
+
+    footer ul li ul li a img {
+      width: 20px;
+      height: 20px;
+      margin-left: 14px;
+      margin-top:20px;
+    }
+
+    .to-top {
+      background-color: rgb(0, 123, 255);
+      border-radius: 12px;
+      width: 20px;
+    }
+
+    footer i {
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer hr {
+      font-size: 20px;
+      width: 60%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img src="logo5_12_20742.png" alt="">
+
+  </div>
+
+  <h1> Welcome Back ! <br>Sign in </h1>
+
+
+  <div class="container">
+    <input type="text" placeholder="Phone , Email Address or Username"><br>
+    <div class="password">
+      <input type="password" placeholder="Password" id="password">
+      <i class="fas fa-eye" onclick="togglePassword()"></i>
+    </div>
+    <br>
+    <a href="" id="forgot">forgot password?</a>
+
+    <button>sign in</button>
+    <br><br>
+    <p>You don't have an account with us?.<br> <a href="Register.html">sign up.</a>
+
+  </div>
+  
+  
+
+  <footer>
+    <img src="logo5_12_20742.png" width="100px" height="100px" alt="">
+    <ul>
+      <li>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#typos">Services</a></li>
+          <li><a href="#FAQ">FAQ</a></li>
+          <li><a href="contact">Contact us</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <ul>
+          <li><a href="https://fb.com/muhammed\ibrahim\olanrewaju"><img src="facebook vec.png" alt=""></a></li>
+          <li><a href="https://twitter.com/hybeeshmurda"><img src="vectwitter.png" alt=""></a></li>
+          <li><a href="tel:+2348069782318"><img src="telegram vec.png" alt=""></a></li>
+          <li><a href="https://instagram.com/hybeeshmurda"><img src="instagram vec.png" alt=""></a></li>
+          <li><a href="mailto:muhammedhybee@gmail.com"><img src="youtube vec.png" alt=""></a></li>
+          <li><a href=""><img src="linkedin vec.png" alt=""></a></li>
+        </ul>
+      </li>
+    </ul>
+    <br><br><br>
+    <hr>
+    <i>&copy;copyright @2021 Altropy, All Rights Reserved</i>
+  </footer>
+
+  <script>
+    function togglePassword() {
+
+      var passwordInput = document.getElementById("password");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+      } else {
+        passwordInput.type = "password";
+      }
+    }
+  </script>
+</body>
+
+</html>
